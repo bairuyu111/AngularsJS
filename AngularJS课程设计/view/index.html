@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>综合练习_首页</title>
+<link href="../css/bootstrap.css" rel="stylesheet" />
+<link href="../css/app.css" rel="stylesheet" />
+<link href="../css/style.css" rel="stylesheet" />
+<script src="../js/jquery.js"></script> 
+<script src="../js/angular.min.js"></script>
+<script src="../js/angular-route.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../app/app.js"></script>
+</head>
+<body>
+	<div class="m_bottom">
+		<div class="padder">      
+			<div class="streamline b-l b-info m-l-lg m-b padder-v">
+				<div>
+								<a class="pull-left thumb-sm avatar m-l-n-md">
+								  <img src="..images/a4.jpg" class="img-circle" alt="...">
+								</a>
+								<div class="m-l-lg m-b-lg">
+								  <div class="m-b-xs">
+									<a href="" class="h4">{{news.name}}</a>
+									<span class="text-muted m-l-sm pull-right">
+									  4h ago
+									</span>
+								  </div>
+								  <div>
+									<div class="m-b">
+									{{news.content}}
+									</div>
+									<div class="panel panel-default m-t-md m-b-n-sm pos-rlt" id="con">
+									  <form>
+										<textarea ng-model='addcon' class="form-control no-border" rows="6" placeholder="Your comment..." ></textarea>
+									  </form>
+									  <div class="panel-footer bg-light lter">
+										<button class="btn btn-info pull-right btn-sm" ng-click="add()">评论</button>
+										<ul class="nav nav-pills nav-sm">
+										  <li><a href=""><i class="fa fa-camera text-muted"></i></a></li>
+										  <li><a href=""><i class="fa fa-video-camera text-muted"></i></a></li>
+										</ul>
+									  </div>
+									</div>
+								  </div>
+								</div>
+				</div>
+							 
+			</div>
+		</div>
+	</div>
+</body>
+</html>
